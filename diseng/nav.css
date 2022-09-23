@@ -1,0 +1,45 @@
+header{
+    width: 100%;
+    padding: 1rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.set{
+    width: 100%;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.set li{
+    font-size: 1.6rem;
+    font-weight: 700;
+    
+    padding: 1rem 3rem;
+    color: var(--color2);
+}
+
+/*Este @media se ejecita cuando la pantalla llega a un tamaño de 1200px*/
+/*Un condicional para el tamaño y su cambio*/
+@media only screen and (min-width: 1200px){
+       header{
+        width: 80%;
+        margin: auto;
+        padding: 1rem 5rem;
+    
+        flex-direction: row;
+        justify-content: space-between;
+       }
+
+       .set{
+        width: 61rem;
+    }
+
+    .img{
+        width: 9rem;
+    }
+}
